@@ -13,14 +13,14 @@ def write_unique_names(file1, file2, output_file):
     
     with open(output_file, 'w') as file:
         for name in unique_names:
-            file.write(f"{name}\n")
+            file.write(f"{name}\\n")
 """
 
 
 # File paths (Change these to your actual file paths)
-file1_path = 'C:\\Users\\Gokul\\Documents\\Pythoncode\\file1.txt'
-file2_path = 'C:\\Users\\Gokul\\Documents\\Pythoncode\\file2.txt'
-output_file_path = 'C:\\Users\\Gokul\\Documents\\Pythoncode\\unique_names.txt'
+file1_path = 'C:\\Users\\Gokul\\Gokul Github\\python_scripts\\\\file1.txt'
+file2_path = 'C:\\Users\\Gokul\\Gokul Github\\python_scripts\\\\file2.txt'
+output_file_path = 'C:\\Users\\Gokul\\Gokul Github\\python_scripts\\\\unique_names.txt'
 
 with open(file1_path, 'r') as file:
     set1 = set(file.read().splitlines())
