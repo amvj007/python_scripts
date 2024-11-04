@@ -9,7 +9,8 @@ with open(file1_path, 'r') as file:
 with open(file2_path, 'r') as file:
     set2 = set(file.read().splitlines())
 
-unique_names = set1 ^ set2  # Symmetric difference to find unique names
+# unique_names = set1 ^ set2  # Symmetric difference to find unique names
+unique_names = set1.difference(set2)
 
 with open(output_file_path, 'w') as file:
     for name in unique_names:
